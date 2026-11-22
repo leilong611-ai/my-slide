@@ -1,23 +1,23 @@
-# open-slide workspace
+# my-slide
 
-Slides as React components. Each slide lives under `slides/<id>/index.tsx` and default-exports an array of page components. The `@open-slide/core` runtime handles layout, scaling, navigation, thumbnails, and fullscreen play mode — you just write the pages.
+A starter workspace for creating React slide decks with OpenSlide. It includes a getting-started deck you can run locally. Each slide lives under `slides/<id>/index.tsx` and default-exports an array of page components. The `@open-slide/core` runtime handles layout, scaling, navigation, thumbnails, and fullscreen play mode — you just write the pages.
 
 ## Getting started
 
 ```bash
-pnpm install
-pnpm dev
+npm ci
+npm run dev
 ```
 
-Then open the dev server and edit `slides/getting-started/index.tsx`, or create a new slide at `slides/<your-slide>/index.tsx`.
+Open the local URL printed in the terminal and select the getting-started deck. To start authoring, edit `slides/getting-started/index.tsx`, or create a new slide at `slides/<your-slide>/index.tsx`.
 
 ## Scripts
 
 | Command | Description |
 | --- | --- |
-| `pnpm dev` | Start the dev server with hot reload. |
-| `pnpm build` | Build a static bundle you can deploy. |
-| `pnpm preview` | Preview the built bundle locally. |
+| `npm run dev` | Start the dev server with hot reload. |
+| `npm run build` | Build a static bundle you can deploy. |
+| `npm run preview` | Preview the built bundle locally. |
 
 ## Authoring a slide
 
